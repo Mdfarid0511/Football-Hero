@@ -1,0 +1,59 @@
+/*-----------------
+CSS stylesheet
+------------------*/
+body{
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   border:0;
+   
+}
+
+/*-----------------
+Header style
+------------------*/
+header{
+
+   background-color:cornflowerblue;
+
+}
+
+.header-main{
+  
+   display: flex;
+
+}
+
+.header-artical{
+
+   width:500px;
+   height: 400px;
+}
+
+.header-artical h1{
+
+   margin-top: 100px;
+   margin-left: 150px;
+   color: white;
+}
+
+.header-artical p a{
+   text-decoration: none;
+   background-color: tomato;
+   color: white;
+   padding: 10px 20px;
+   border-radius: 10px;
+   margin-left: 200px;
+   margin-top: 150px;  
+}
+
+.header-artical p a:hover{
+     text-decoration: underline;
+}
+
+.header-image img{
+   width: 450px;
+   height: 350px;
+   margin-top: 50px;
+   margin-left: 300px;
+}
