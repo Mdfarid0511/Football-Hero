@@ -1,6 +1,9 @@
 /*-----------------
 CSS stylesheet
 ------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
 body{
    font-family: 'Poppins', sans-serif;
    margin: 0;
@@ -13,41 +16,53 @@ body{
 Header style
 ------------------*/
 header{
-
    background-color:cornflowerblue;
-
 }
 
 .header-main{
-  
    display: flex;
-
 }
 
 .header-artical{
-
    width:500px;
    height: 400px;
 }
 
 .header-artical h1{
-
    margin-top: 100px;
    margin-left: 150px;
    color: white;
 }
 
-.header-artical p a{
-   text-decoration: none;
+.live-session-link {
    background-color: tomato;
-   color: white;
-   padding: 10px 20px;
-   border-radius: 10px;
-   margin-left: 200px;
-   margin-top: 150px;  
+   width: 150px;
+   text-align: center;
+   padding: 8px; 
+   border-radius: 10px; 
+   margin-left: 250px; 
+   transition: width 3s;
 }
 
-.header-artical p a:hover{
+.live-session-link:hover {  
+   width: 300px; 
+}
+
+.live-session-link i{
+   margin-left: 5px;
+   font-size: 15px;
+   margin-top: 10px;
+   color: white;
+}
+
+.live-session-link a{
+   text-decoration: none;
+   color: white;
+   font-weight: 700;
+   font-size: 20px;
+}
+
+.header-main .live-session-link a:hover{
      text-decoration: underline;
 }
 
@@ -63,17 +78,72 @@ header{
 Style of body
  -----------------*/
  .player-container{
-
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   margin-top: 30px;
-   margin-left: 30px;
-   width: 1050px;
-   
+   margin-top: 40px;
+   margin-left: 300px;
+   width: 900px;  
+ }
+
+ .player-bio{
+   width: 240px;
+   height: 400px;
+   box-shadow: 10px 10px 30px gray;
+   margin-left: 5px;
+   margin-right: 5px;
+   padding: 10px;
+   border-radius: 5px;
  }
 
  .first-row-image img{
-
-   width: 300px;
-   height: 256px;
+   width: 230px;
+   height: 180px;
+   border-radius: 10px;
+   margin-left: 5px;
  }
+
+  p{
+   font-size: 12px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 300; 
+ }
+
+ /*-------------
+  Footer style
+  -------------*/
+.end-container{
+   margin-top: 80px;
+   margin-left: 600px;
+   width: 400px;
+  }
+
+.end-container img{ 
+   width: 250px;
+  }
+
+.icon-link { 
+   margin-left: 20px;
+  }
+
+.end-container .icon-link a{ 
+   color:black;
+   margin-left: 10px;
+   font-size: 25px;
+  }
+
+.icon-link a:hover{ 
+   color:red;
+}
+
+.end {
+   margin-left: 35px;
+}
+
+.end p{
+   font-size: 14px;
+   font-weight: 700;
+}
+
+
+
+ 
